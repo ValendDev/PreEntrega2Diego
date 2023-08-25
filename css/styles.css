@@ -292,7 +292,7 @@ nav{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 1rem;
+    gap: 0 10px;
     background-color: #B49286;
 }
 
@@ -306,6 +306,7 @@ nav{
     padding: 20px;
     min-width: 200px;
     border-radius: 20px;
+
 }
 
 .container__benefits i{
@@ -360,7 +361,6 @@ nav{
     height: 600px;
     padding: 39px;
     background-color: #C78283;
-    border-radius: 10px;
 }
 
 .carousel__text h2{
@@ -611,12 +611,13 @@ input[type=radio]{
     ;
     justify-content: center;
     align-content: center;
+    padding: 30px;
+    gap: 0 20px;
 }
 
 .mapa{
     width: 100%;
     height: 100%;
-    padding: 15px;
 }
 
 .mapa__container{
@@ -626,7 +627,6 @@ input[type=radio]{
     background-color: #F3D9DC;
     grid-area: mapa__container;
     align-content: center;
-    padding: 20px;
 }
 
 
@@ -1925,6 +1925,7 @@ main::-webkit-scrollbar{
     }
     .banner{
         background: linear-gradient(100deg, #000000b2, #9c9c9c00), url(../img/banner1.png);
+        background-position:0px;
         padding: 0 0px;
         height: 50vh;
         width: 100vw;
@@ -2003,6 +2004,7 @@ main::-webkit-scrollbar{
     }
     .banner{
         background: linear-gradient(100deg, #000000b2, #9c9c9c00), url(../img/banner1.png);
+        background-position:0px;
         padding: 0 0px;
         height: 60vh;
         width: 100vw;
@@ -2072,6 +2074,7 @@ main::-webkit-scrollbar{
     }
     .banner{
         background: linear-gradient(100deg, #000000b2, #9c9c9c00), url(../img/banner1.png);
+        background-position:0px;
         padding: 0 0px;
         height: 100vh;
         width: 100vw;
@@ -2138,6 +2141,7 @@ main::-webkit-scrollbar{
     }
     .banner{
         background: linear-gradient(100deg, #000000b2, #9c9c9c00), url(../img/banner1.png);
+        background-position:0px;
         padding: 0 0px;
         height: 100vh;
         width: 100vw;
@@ -2251,7 +2255,7 @@ main::-webkit-scrollbar{
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1,150px);
-        gap: 10px;
+        gap: 0 10px;
         background-color: #B49286;
         justify-content: center;
         justify-items: center;
@@ -2299,7 +2303,7 @@ main::-webkit-scrollbar{
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        gap: 10px;
+        gap: 0 10px;
         background-color: #B49286;
         justify-content: center;
         justify-items: center;
@@ -2345,7 +2349,7 @@ main::-webkit-scrollbar{
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        gap: 10px;
+        gap: 0 10px;
         background-color: #B49286;
         justify-content: center;
         justify-items: center;
@@ -2391,7 +2395,7 @@ main::-webkit-scrollbar{
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 10px;
+        gap: 0 10px;
         background-color: #B49286;
         justify-content: center;
         justify-items: center;
@@ -2437,7 +2441,7 @@ main::-webkit-scrollbar{
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 10px;
+        gap: 0 10px;
         background-color: #B49286;
         justify-content: center;
         justify-items: center;
@@ -2482,7 +2486,7 @@ main::-webkit-scrollbar{
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        gap: 1rem;
+        gap: 0 10px;
         background-color: #B49286;
         text-align: left;
     }
@@ -2551,7 +2555,6 @@ main::-webkit-scrollbar{
         width:1000px;
         height: 100%;
         background-color: #C78283;
-        border-radius: 10px;
         max-width: 600px;
         text-align: center;
     }
@@ -2604,7 +2607,6 @@ main::-webkit-scrollbar{
         width:1000px;
         height: 100%;
         background-color: #C78283;
-        border-radius: 10px;
         max-width: 600px;
     }
     
@@ -2659,7 +2661,6 @@ main::-webkit-scrollbar{
         width:1000px;
         height: 100%;
         background-color: #C78283;
-        border-radius: 10px;
         max-width: 600px;
     }
     
@@ -3291,6 +3292,8 @@ main::-webkit-scrollbar{
        "mapa__container mapa__container mapa__container"
        "parrafo__mapa parrafo__mapa parrafo__mapa"
        "parrafo__mapa parrafo__mapa parrafo__mapa";
+        padding: 30px;
+        gap: 0 20px;
     }
 
     .mapa{
@@ -3381,6 +3384,8 @@ main::-webkit-scrollbar{
        "mapa__container mapa__container mapa__container"
        "parrafo__mapa parrafo__mapa parrafo__mapa"
        "parrafo__mapa parrafo__mapa parrafo__mapa";
+        padding: 30px;
+        gap: 0 20px;
     }
 
     .mapa{
@@ -3466,12 +3471,13 @@ main::-webkit-scrollbar{
         ;
         justify-content: center;
         align-content: center;
+        padding: 30px;
+        gap: 0 20px;
     }
 
     .mapa{
         width: 100%;
         height: 600px;
-        padding: 15px;
     }
     
     .mapa__container{
@@ -3481,7 +3487,6 @@ main::-webkit-scrollbar{
         background-color: #F3D9DC;
         grid-area: mapa__container;
         align-content: center;
-        padding: 20px;
     }
     
     
@@ -3536,7 +3541,7 @@ main::-webkit-scrollbar{
     }
 }
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 1200px){
     .seccion__mapa{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -3548,12 +3553,13 @@ main::-webkit-scrollbar{
         ;
         justify-content: center;
         align-content: center;
+        padding: 30px;
+        gap: 0 20px;
     }
 
     .mapa{
         width: 100%;
         height: 600px;
-        padding: 15px;
     }
     
     .mapa__container{
@@ -3563,7 +3569,6 @@ main::-webkit-scrollbar{
         background-color: #F3D9DC;
         grid-area: mapa__container;
         align-content: center;
-        padding: 20px;
     }
     
     
