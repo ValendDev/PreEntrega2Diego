@@ -904,6 +904,7 @@ footer{
 
 .fa-chevron-down {
     transition: transform .5s ease-in;
+    font-size: 1.3rem;
 }
 
 @keyframes fade {
@@ -1112,7 +1113,7 @@ main::-webkit-scrollbar{
 
 /*NAVEGADOR*/
 /*responsive*/
-@media screen and (min-width: 240px) and (max-width: 960px){
+@media screen and (min-width: 240px) and (max-width: 1080px){
     #menu__icon{
         display: block;
         color: #fff;
@@ -1353,7 +1354,7 @@ main::-webkit-scrollbar{
 
     .container__search form input{  
         font-size: 1.1rem;
-        width: 8rem;
+        width: 15rem;
         border-radius: 10px;
         outline: none;
         color: #777;
@@ -1442,7 +1443,7 @@ main::-webkit-scrollbar{
 
     .container__search form input{  
         font-size: 1.1rem;
-        width: 8rem;
+        width: 15rem;
         border-radius: 10px;
         outline: none;
         color: #777;
@@ -1502,10 +1503,6 @@ main::-webkit-scrollbar{
         border-right: 1px solid #c7828338;
     }
 
-    #menu__icon{
-        display: none;
-    }
-
     .container__navbar{
         width: 100%;
         display: flex;
@@ -1518,35 +1515,8 @@ main::-webkit-scrollbar{
         height: 80px;
     }
 
-    .navmenu{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .navmenu a{
-        color: #fff;
-        font-size: 0.7rem;
-        text-transform: capitalize;
-        padding: 10px 30px;
-        font-weight: 500;
-        transition: all .42s ease;
-        text-transform: uppercase;
-        position: relative;
-        text-decoration: none;
-    }
-
     .submenu{
-        position: absolute;
-        list-style: none;
-        width: 170px;
-        background-color: #C78283;
-        color: #fff;
-        margin-left: 12px;
-        text-align: left;
-        padding: 0;
+        display: none;
     }
 
     .container__search form{
@@ -1556,24 +1526,19 @@ main::-webkit-scrollbar{
         border: 2px solid #fff;
         border-radius: 2rem;
         background-color: #fff;
-        height: 3.5rem;
+        height: 3rem;
         overflow: hidden;
     }
 
-    .container__search input::-webkit-search-cancel-button{
-        appearance: none;
-    }
-
-    .container__search form input{
-        font-size: 1.4rem;
-        width: 10rem;
+    .container__search form input{  
+        font-size: 1.1rem;
+        width: 15rem;
         border-radius: 10px;
         outline: none;
         color: #777;
         border: none;
         padding: 0 2rem;
     }
-
 }
 
 @media screen and (min-width: 1080px){
@@ -1684,6 +1649,16 @@ main::-webkit-scrollbar{
         background-color: #fff;
         height: 3.5rem;
         overflow: hidden;
+    }
+
+    .container__search form input{  
+        font-size: 1.1rem;
+        width: 12rem;
+        border-radius: 10px;
+        outline: none;
+        color: #777;
+        border: none;
+        padding: 0 2rem;
     }
 
     .container__search input::-webkit-search-cancel-button{
@@ -1814,6 +1789,18 @@ main::-webkit-scrollbar{
 
     .container__search input::-webkit-search-cancel-button{
         appearance: none;
+    }
+}
+
+@media screen and (min-width: 1350px){
+    .container__search form input{  
+        font-size: 1.4rem;
+        width: 20rem;
+        border-radius: 10px;
+        outline: none;
+        color: #777;
+        border: none;
+        padding: 0 2rem;
     }
 }
    
@@ -3554,7 +3541,7 @@ main::-webkit-scrollbar{
     }
     
     .faq{
-        max-width: 700px;
+        max-width: 860px;
         margin-top: 2rem;
         padding-bottom: 1rem;
         border-bottom: 2px solid #fff;
@@ -3754,22 +3741,23 @@ main::-webkit-scrollbar{
 }
 
     .text__products h1{
-        font-size: 30px;
-        color: #C78283;
+        font-size: 40px;
+        color: #B49286;
         margin: 0 0 5px 0;
-        font-family: 'League Spartan';
         margin-top: 5px;
-}
+        font-family: 'League Spartan';
+    }
 
     .text__products p{
-        font-size: 15px;
+        font-size: 20px;
         max-width: 70%;
-        color: #C78283;
-}
+        color: #777;
+    }
 
     .text__products i{
         font-size: 40px;
-        color: #C78283;
+        color: #B49286;
+        margin-bottom: 20px;
     }
 
     .img__products{
