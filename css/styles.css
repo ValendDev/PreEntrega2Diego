@@ -364,9 +364,10 @@ nav{
 }
 
 .carousel__text h2{
-    font-size: 3.3rem;
+    font-size: 3rem;
     text-align: left;
     color: #fff;
+    font-weight: 600;
 }
 
 .carousel__text p{
@@ -393,13 +394,12 @@ nav{
 }
 
 /*CARDS DE PRODUCTOS*/
-.titulos{
+.title__comida{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
-    padding: 15px;
+    padding: 30px;
     font-weight: 600;
     font-size: 3rem;
     color: #fff;
@@ -416,11 +416,10 @@ nav{
     align-items: center;
     font-family: 'Jost', sans-serif;
     background-color: #B49286;
-    padding: 15px;
 }
 
 
-.comida__container{
+.comida__container--index{
     width: 100%;
     display: flex;
     max-width: 1100px;
@@ -489,108 +488,13 @@ nav{
     color: #fff;
 }
 
-
-/*GALERIA DE FOTOS (CONOCENOS)*/
-.seccion__fotos{
-    background-color: #fff;
-    width: 100%;
-    height: 70vh;
-}
-
-.parrafo__fotos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    font-family:'Jost', sans-serif;
-    font-size: 25px;
-    color: #2c2c2c;
-    padding: 50px 0 0 0;
-}
-
-input[type=radio]{
-    display: none;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    max-height: 600px;
-    transform-style: preserve-3d;
-    margin-top: 30px;
-}
-
-.container__slider{
-    max-width: 1000px;
-    height: 500px;
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 20px 10px;
-}
-
-.cards{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.cards1{
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.cards1 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-#item-2:checked ~ .cards #selector-1,
-#item-1:checked ~ .cards #selector-3,
-#item-3:checked ~ .cards #selector-2{
-    transform: translateX(-40%) scale(0.8);
-    opacity: 0.6;
-    z-index: 0;
-}
-
-#item-3:checked ~ .cards #selector-1,
-#item-1:checked ~ .cards #selector-2,
-#item-2:checked ~ .cards #selector-3{
-    transform: translateX(40%) scale(0.8);
-    opacity: 0.6;
-    z-index: 0;
-}
-
-#item-1:checked ~ .cards #selector-1,
-#item-2:checked ~ .cards #selector-2,
-#item-3:checked ~ .cards #selector-3{
-    transform: translateX(0) scale(1);
-    z-index: 1;
-}
-
 /*MAPA*/
 .title__map{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 60px 0 30px 30px;
     font-weight: 600;
     font-size: 3rem;
     color: #C78283;
@@ -946,7 +850,7 @@ footer{
 .title__faqs{
     width: 100vw;
     text-align: center;
-    font-size: 35px;
+    font-size: 2.5rem;
     font-family: 'Jost';
     color: #2c2c2c;
     background-color: #fff;
@@ -1139,7 +1043,8 @@ footer{
 
 .text__sobrenosotros h2{
     font-size: 45px;
-    margin-bottom: 10%;
+    margin: 30px 0;
+    font-weight: 600;
 }
 
 .text__sobrenosotros p{
@@ -2560,9 +2465,10 @@ main::-webkit-scrollbar{
     }
     
     .carousel__text h2{
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-align: left;
         color: #fff;
+        font-weight: 600;
     }
     
     .carousel__text p{
@@ -2611,10 +2517,10 @@ main::-webkit-scrollbar{
     }
     
     .carousel__text h2{
-        font-size: 3.3rem;
+        font-size: 3rem;
         text-align: left;
         color: #fff;
-        text-align: left;
+        font-weight: 600;
     }
     
     .carousel__text p{
@@ -2665,8 +2571,10 @@ main::-webkit-scrollbar{
     }
     
     .carousel__text h2{
-        font-size: 3.3rem;
+        font-size: 3rem;
+        text-align: left;
         color: #fff;
+        font-weight: 600;
     }
     
     .carousel__text p{
@@ -2686,12 +2594,12 @@ main::-webkit-scrollbar{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 20px;
-        padding: 15px;
+        padding: 30px;
         font-weight: 600;
         font-size: 2.5rem;
         color: #fff;
         font-family: 'Jost', sans-serif;
+        margin: 0;
     }
     
     .seccion__comida--index{
@@ -2703,7 +2611,7 @@ main::-webkit-scrollbar{
         align-items: center;
         font-family: 'Jost', sans-serif;
         background-color: #B49286;
-        padding: 20px;
+        padding: 40px;
     }
 
     .comida__container--index{
@@ -2774,7 +2682,8 @@ main::-webkit-scrollbar{
         justify-content: center;
         align-items: center;
         font-family: 'Jost', sans-serif;
-        padding: 15px;
+        padding: 30px;
+        font-size: 3rem;
     }
     
     .seccion__comida--index{
@@ -2786,7 +2695,6 @@ main::-webkit-scrollbar{
         align-items: center;
         font-family: 'Jost', sans-serif;
         background-color: #B49286;
-        padding: 60px;
     }
     
     
@@ -2858,7 +2766,7 @@ main::-webkit-scrollbar{
         justify-content: center;
         align-items: center;
         font-family: 'Jost', sans-serif;
-        padding: 15px;
+        padding: 30px;
     }
     
     .seccion__comida--index{
@@ -3014,260 +2922,6 @@ main::-webkit-scrollbar{
     }
  }
 
-/*FOTOS*
-@media screen and (min-width: 240px){
-    .seccion__fotos{
-        background-color: #fff;
-        width: 100%;
-        height:100%;
-    }
-    
-    .parrafo__fotos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        font-family:'Jost', sans-serif;
-        font-size: 18px;
-        color: #2c2c2c;
-        padding: 30px;
-    }
-    
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 320px;
-        max-width: 800px;
-        max-height: 600px;
-        transform-style: preserve-3d;
-        margin-top: 30px;
-    }
-    
-    .container__slider{
-        max-width: 1000px;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        padding: 20px 10px;
-        margin-top: -50px;
-    }
-    
-    .cards{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-    }
-    
-    .cards1{
-        position: absolute;
-        width: 60%;
-        height: 100%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        cursor: pointer;
-        transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-    
-    .cards1 img{
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width: 254px){
-    .seccion__fotos{
-        background-color: #fff;
-        width: 100%;
-        height:100%;
-    }
-
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 340px;
-        max-width: 800px;
-        max-height: 600px;
-        transform-style: preserve-3d;
-        margin-top: 30px;
-    }
-
-    .cards1 img{
-        width: 100%;
-        height: 320px;
-        border-radius: 10px;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width: 324px){
-    .seccion__fotos{
-        background-color: #fff;
-        width: 100%;
-        height:100%;
-    }
-
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 360px;
-        max-width: 800px;
-        max-height: 600px;
-        transform-style: preserve-3d;
-        margin-top: 30px;
-    }
-
-    .cards1 img{
-        width: 100%;
-        height: 340px;
-        border-radius: 10px;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width: 415px){
-    .seccion__fotos{
-        background-color: #fff;
-        width: 100%;
-        height:100%;
-    }
-
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 380px;
-        max-width: 800px;
-        max-height: 600px;
-        transform-style: preserve-3d;
-        margin-top: 30px;
-    }
-
-    .cards1 img{
-        width: 100%;
-        height: 360px;
-        border-radius: 10px;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width: 594px){
-    .seccion__fotos{
-        background-color: #fff;
-        width: 100%;
-        height:100%;
-    }
-
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 400px;
-        max-width: 800px;
-        max-height: 600px;
-        transform-style: preserve-3d;
-        margin-top: 30px;
-    }
-
-    .cards1 img{
-        width: 100%;
-        height: 380px;
-        border-radius: 10px;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width: 620px){
-    .seccion__fotos{
-        background-color: #fff;
-        width: 100%;
-        height:100%;
-    }
-    
-    .parrafo__fotos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        font-family:'Jost', sans-serif;
-        font-size: 20px;
-        color: #2c2c2c;
-        padding: 50px 0 0 0;
-    }
-    
-    input[type=radio]{
-        display: none;
-    }
-    
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height:550px;
-        max-width: 800px;
-        max-height: 600px;
-        transform-style: preserve-3d;
-        margin-top: 30px;
-    }
-    
-    .container__slider{
-        max-width: 1000px;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        padding: 20px 10px;
-    }
-    
-    .cards{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-    }
-    
-    .cards1{
-        position: absolute;
-        width: 60%;
-        height: 100%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        cursor: pointer;
-        transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-    
-    .cards1 img{
-        width: 100%;
-        height: 500px;
-        border-radius: 10px;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-}
-
 /*MAPA*/
 @media screen and (min-width: 240px){
     .title__map{
@@ -3275,9 +2929,9 @@ main::-webkit-scrollbar{
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 30px;
+        padding: 60px 0 30px 30px;
         font-weight: 600;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #C78283;
         font-family: 'Jost', sans-serif;
         background-color: #F3D9DC;
@@ -3292,7 +2946,7 @@ main::-webkit-scrollbar{
        "mapa__container mapa__container mapa__container"
        "parrafo__mapa parrafo__mapa parrafo__mapa"
        "parrafo__mapa parrafo__mapa parrafo__mapa";
-        padding: 30px;
+        padding:0px;
         gap: 0 20px;
     }
 
@@ -3318,7 +2972,7 @@ main::-webkit-scrollbar{
        height: 100%;
        background-color:#C78283;
        grid-area: parrafo__mapa;
-       padding: 30px 40px;
+       padding: 30px 25px;
        align-content: space-evenly;
        justify-content:flex-start;
        justify-items: left;
@@ -3375,6 +3029,20 @@ main::-webkit-scrollbar{
 }
 
 @media screen and (min-width: 480px){
+    .title__map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 60px 0 30px 30px;
+        font-weight: 600;
+        font-size: 3rem;
+        color: #C78283;
+        font-family: 'Jost', sans-serif;
+        background-color: #F3D9DC;
+        margin: 0 auto;
+    }
+
     .seccion__mapa{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -3837,10 +3505,21 @@ main::-webkit-scrollbar{
         height: 100%;
         padding: 25px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #F3D9DC;
         overflow-x: hidden;
+    }
+
+    .comida__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1100px;
+        gap: 2em;
     }
     
     .faqs{
@@ -3901,19 +3580,69 @@ main::-webkit-scrollbar{
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 400px){
     .section__pd{
-        height: 100%;
-        padding: 25px;
         display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
         justify-content: center;
         align-items: center;
-        background-color: #F3D9DC;
-        overflow-x: hidden;
+        font-family: 'Jost', sans-serif;
     }
 
     .comida__container{
-        background-color: #F3D9DC;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1100px;
+        gap: 2em;
+    }
+}
+
+@media screen and (min-width: 640px){
+    .section__pd{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .comida__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1100px;
+        gap: 2em;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section__pd{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .comida__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1100px;
+        gap: 2em;
     }
     
     .faqs{
@@ -3932,7 +3661,7 @@ main::-webkit-scrollbar{
     .title__faqs{
         width: 100vw;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-family: 'Jost';
         color: #fff;
         background-color: #C78283;
@@ -3980,6 +3709,28 @@ main::-webkit-scrollbar{
     }
 }
 
+@media screen and (min-width: 1115px){
+    .section__pd{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Jost', sans-serif;
+        background-color: #F3D9DC;
+    }
+    
+    
+    .comida__container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        max-width: 1100px;
+        gap: 2em;
+    }
+}
+
 /*TORTAS/PASTISSERIE/BRUNCH/NOVEDADES*/
 @media screen and (min-width: 240px){
     .text__products{
@@ -3991,7 +3742,7 @@ main::-webkit-scrollbar{
         gap:10px;
         padding: 40px 40px;
         width: 100%;
-        background-color: #fff;
+        background-color: #F3D9DC;
 }
 
     .text__products h1{
@@ -4270,8 +4021,8 @@ main::-webkit-scrollbar{
 
     .text__sobrenosotros h2{
         font-size: 35px;
-        margin-bottom: 30px;
-        margin-top:10px;
+        margin: 30px 0;
+        font-weight: 600;
         text-align: center;
     }
 
@@ -4350,8 +4101,8 @@ main::-webkit-scrollbar{
 
     .text__sobrenosotros h2{
         font-size: 45px;
-        margin-bottom: 30px;
-        margin-top: 10px;
+        margin: 30px 0;
+        font-weight: 600;
         text-align: center;
     }
 
@@ -4429,8 +4180,8 @@ main::-webkit-scrollbar{
 
     .text__sobrenosotros h2{
         font-size: 45px;
-        margin-bottom: 30px;
-        margin-top: 20px;
+        margin: 30px 0;
+        font-weight: 600;
     }
 
     .text__sobrenosotros p{
