@@ -1821,7 +1821,7 @@ main::-webkit-scrollbar{
         background: linear-gradient(100deg, #000000b2, #9c9c9c00), url(../img/banner1.png);
         background-position:0px;
         padding: 0 0px;
-        height: 50vh;
+        height: 75vh;
         width: 100vw;
         background-size: cover;
         flex-direction: column;
@@ -1900,7 +1900,7 @@ main::-webkit-scrollbar{
         background: linear-gradient(100deg, #000000b2, #9c9c9c00), url(../img/banner1.png);
         background-position:0px;
         padding: 0 0px;
-        height: 60vh;
+        height: 80vh;
         width: 100vw;
         background-size: cover;
         flex-direction: column;
