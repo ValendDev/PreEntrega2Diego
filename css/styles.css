@@ -116,7 +116,7 @@ nav {
   left: 0;
 }
 
-.menu__link {
+.navmenu a {
   color: #fff;
   font-size: 1.1rem;
   text-transform: capitalize;
@@ -127,7 +127,7 @@ nav {
   position: relative;
 }
 
-.menu__link:hover {
+.navmenu a:hover {
   color: #7a4f50;
 }
 
@@ -142,7 +142,7 @@ nav {
   text-align: left;
 }
 
-.menu__item:hover .submenu {
+.navmenu li:hover .submenu {
   display: block;
 }
 
@@ -3891,4 +3891,4 @@ main::-webkit-scrollbar {
     width: 100%;
     grid-area: img3;
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */*/
