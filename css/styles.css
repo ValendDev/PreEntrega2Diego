@@ -870,8 +870,17 @@ footer {
   background: #C78283;
   display: flex;
   flex-direction: column;
+  animation: btnAnimation 2s ease-in-out;
 }
 
+@keyframes btnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .btn__banner:hover {
   background-color: #fff;
   color: #C78283;
@@ -1527,7 +1536,7 @@ footer {
   .banner {
     background-position: 0px;
     padding: 0 100px;
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     background-size: cover;
     flex-direction: column;
