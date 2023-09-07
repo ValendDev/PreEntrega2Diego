@@ -881,11 +881,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: self-start;
-  background: linear-gradient(rgba(0, 0, 0, 0)) url(../img/banner1.png);
+  background: url(/img/Diseño\ sin\ título\ \(77\).png);
   padding: 0 100px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
+  background-position: bottom;
   cursor: default;
   text-align: center;
   margin: 0 auto;
@@ -894,7 +895,7 @@ footer {
 
 .titulo__banner {
   font-size: 90px;
-  color: #dab900;
+  color: #fff;
   margin-top: 25px;
   font-family: "League Spartan";
 }
@@ -902,13 +903,13 @@ footer {
 .subtitulo__banner {
   text-align: center;
   font-size: 35px;
-  color: #161616;
+  color: #fff;
   font-family: "League Spartan";
 }
 
 .texto__musbakery {
   text-align: center;
-  color: #fa5a77;
+  color: #C78283;
   font-family: "Libre Baskerville";
   font-style: italic;
   font-size: 60px;
@@ -917,7 +918,7 @@ footer {
 .parrafo__banner {
   text-align: center;
   font-size: 13px;
-  color: #161616;
+  color: #fff;
   font-family: "Libre Baskerville";
   margin: 10px 0;
 }
@@ -1341,7 +1342,6 @@ footer {
     overflow: hidden;
   }
   .banner {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6980392157), rgba(156, 156, 156, 0)), url(../img/banner1.png);
     background-position: 0px;
     padding: 0 0px;
     height: 75vh;
@@ -1417,7 +1417,6 @@ footer {
     overflow: hidden;
   }
   .banner {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6980392157), rgba(156, 156, 156, 0)), url(../img/banner1.png);
     background-position: 0px;
     padding: 0 0px;
     height: 80vh;
@@ -1486,7 +1485,6 @@ footer {
     overflow: hidden;
   }
   .banner {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6980392157), rgba(156, 156, 156, 0)), url(../img/banner1.png);
     background-position: 0px;
     padding: 0 0px;
     height: 100vh;
@@ -1552,7 +1550,6 @@ footer {
     overflow: hidden;
   }
   .banner {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6980392157), rgba(156, 156, 156, 0)), url(../img/banner1.png);
     background-position: 0px;
     padding: 0 0px;
     height: 100vh;
@@ -1593,7 +1590,6 @@ footer {
     overflow: hidden;
   }
   .banner {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6980392157), rgba(156, 156, 156, 0)), url(../img/banner1.png);
     background-position: 0px;
     padding: 0 100px;
     height: 80vh;
@@ -1618,7 +1614,7 @@ footer {
   }
   .subtitulo__banner {
     font-size: 2rem;
-    color: #fff;
+    color: #B49286;
     font-family: "Libre Baskerville";
   }
   .texto__musbakery {
@@ -1630,13 +1626,14 @@ footer {
   }
   .parrafo__banner {
     font-size: 1.3rem;
-    color: #fff;
+    color: #B49286;
     font-family: "Libre Baskerville";
+    text-align: left;
   }
   hr {
     width: 80px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #B49286;
     opacity: 1;
   }
   .btn__banner {
@@ -3891,4 +3888,4 @@ main::-webkit-scrollbar {
     width: 100%;
     grid-area: img3;
   }
-}/*# sourceMappingURL=styles.css.map */*/
+}/*# sourceMappingURL=styles.css.map */
