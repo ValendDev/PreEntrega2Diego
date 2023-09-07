@@ -120,7 +120,7 @@ nav {
   color: #fff;
   font-size: 1.1rem;
   text-transform: capitalize;
-  padding: 10px 30px;
+  padding: 27px;
   font-weight: 500;
   transition: all 0.42s ease;
   text-transform: uppercase;
@@ -128,32 +128,7 @@ nav {
 }
 
 .navmenu a:hover {
-  color: #7a4f50;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  list-style: none;
-  width: 170px;
-  background-color: #C78283;
-  color: #fff;
-  margin-left: 12px;
-  text-align: left;
-}
-
-.navmenu li:hover .submenu {
-  display: block;
-}
-
-.submenu li:hover {
-  background: #e69899;
-}
-
-.submenu li a {
-  display: block;
-  color: #fff;
-  padding: 15px 15px 15px 20px;
+  background-color: #d1a2a2;
 }
 
 .container__search form {
@@ -237,9 +212,6 @@ nav {
     color: #C78283;
     transition: all 0.42s ease;
   }
-  .submenu {
-    display: none;
-  }
 }
 @media screen and (min-width: 240px) {
   .container__header {
@@ -284,9 +256,6 @@ nav {
     background-color: #C78283;
     padding: 0 5%;
     height: 80px;
-  }
-  .submenu {
-    display: none;
   }
   .container__search form {
     position: relative;
@@ -340,9 +309,6 @@ nav {
     padding: 0 5%;
     height: 80px;
   }
-  .submenu {
-    display: none;
-  }
   .container__search form {
     position: relative;
     display: flex;
@@ -393,9 +359,6 @@ nav {
     background-color: #C78283;
     padding: 0 5%;
     height: 80px;
-  }
-  .submenu {
-    display: none;
   }
   .container__search form {
     position: relative;
@@ -470,9 +433,6 @@ nav {
     padding: 0 5%;
     height: 80px;
   }
-  .submenu {
-    display: none;
-  }
   .container__search form {
     position: relative;
     display: flex;
@@ -545,9 +505,6 @@ nav {
     background-color: #C78283;
     padding: 0 5%;
     height: 80px;
-  }
-  .submenu {
-    display: none;
   }
   .container__search form {
     position: relative;
@@ -636,23 +593,12 @@ nav {
     color: #fff;
     font-size: 0.9rem;
     text-transform: capitalize;
-    padding: 10px 30px;
+    padding: 27px;
     font-weight: 500;
     transition: all 0.42s ease;
     text-transform: uppercase;
     position: relative;
     text-decoration: none;
-  }
-  .submenu {
-    display: none;
-    position: absolute;
-    list-style: none;
-    width: 170px;
-    background-color: #C78283;
-    color: #fff;
-    margin-left: 12px;
-    text-align: left;
-    padding: 0;
   }
   .container__search form {
     position: relative;
@@ -744,23 +690,12 @@ nav {
     color: #fff;
     font-size: 1.1rem;
     text-transform: capitalize;
-    padding: 10px 30px;
+    padding: 27px;
     font-weight: 500;
     transition: all 0.42s ease;
     text-transform: uppercase;
     position: relative;
     text-decoration: none;
-  }
-  .submenu {
-    display: none;
-    position: absolute;
-    list-style: none;
-    width: 170px;
-    background-color: #C78283;
-    color: #fff;
-    margin-left: 12px;
-    text-align: left;
-    padding: 0;
   }
   .container__search form {
     position: relative;
