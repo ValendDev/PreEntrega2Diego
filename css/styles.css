@@ -807,7 +807,7 @@ footer .footer__copy {
   flex-direction: column;
   justify-content: center;
   align-items: self-start;
-  background: url(../img/Diseño\ sin\ título\ \(77\).png);
+  background: url(../img/Diseño\ sin\ título\ \(77\).jpg);
   padding: 0 100px;
   height: 100vh;
   width: 100%;
@@ -833,7 +833,7 @@ footer .footer__copy {
   font-family: "League Spartan";
 }
 
-.texto__musbakery {
+.titulo__span {
   text-align: center;
   color: #C78283;
   font-family: "Libre Baskerville";
@@ -1278,7 +1278,7 @@ hr {
   .subtitulo__banner {
     font-size: 20px;
   }
-  .texto__musbakery {
+  .titulo__span {
     font-size: 25px;
   }
   .parrafo__banner {
@@ -1301,7 +1301,7 @@ hr {
   .subtitulo__banner {
     font-size: 30px;
   }
-  .texto__musbakery {
+  .titulo__span {
     font-size: 40px;
   }
   .parrafo__banner {
@@ -1320,7 +1320,7 @@ hr {
   .subtitulo__banner {
     font-size: 35px;
   }
-  .texto__musbakery {
+  .titulo__span {
     font-size: 55px;
   }
   .btn__banner {
@@ -1344,7 +1344,7 @@ hr {
     color: #B49286;
     font-family: "Libre Baskerville";
   }
-  .texto__musbakery {
+  .titulo__span {
     color: #C78283;
     font-family: "Libre Baskerville";
     font-style: italic;
@@ -1382,6 +1382,8 @@ hr {
   .section__benefits {
     display: grid;
     grid-template-columns: repeat(1, 150px);
+    justify-items: center;
+    justify-content: center;
   }
   .container__benefits {
     display: flex;
@@ -2362,7 +2364,7 @@ hr {
     align-items: center;
     width: 350px;
     height: 350px;
-    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5882352941), rgba(0, 0, 0, 0.5882352941)), url(../img/Sin\ título5.png);
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5882352941), rgba(0, 0, 0, 0.5882352941)), url(../img/Sin\ título5.jpg);
     background-size: cover;
     background-position: bottom;
     border-radius: 10px;
@@ -2488,7 +2490,6 @@ hr {
     align-items: center;
     width: 350px;
     height: 350px;
-    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5882352941), rgba(0, 0, 0, 0.5882352941)), url(../img/Sin\ título5.png);
     background-size: cover;
     background-position: bottom;
     border-radius: 10px;
