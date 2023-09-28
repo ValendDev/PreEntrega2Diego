@@ -105,6 +105,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
   }
   
   .navmenu.open {
@@ -120,6 +121,7 @@ header {
     transition: all 0.42s ease;
     text-transform: uppercase;
     position: relative;
+    text-decoration: none;
   }
   
   .navmenu a:hover {

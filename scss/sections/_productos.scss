@@ -5,8 +5,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #B49286;
+    background-color: $primarioClaro;
     overflow-x: hidden;
+}
+
+.comida__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    gap: 2em;
 }
 
 .faqs{
@@ -16,8 +26,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    color: #2c2c2c;
+    background-color: $primarioOscuro;
+    color: #fff;
     overflow-x: hidden;
 }
 
@@ -26,8 +36,8 @@
     text-align: center;
     font-size: 2.5rem;
     font-family: 'Jost';
-    color: #2c2c2c;
-    background-color: #fff;
+    color: #fff;
+    background-color: $primarioOscuro;
     padding: 50px 0px;
 }
 
@@ -35,7 +45,7 @@
     max-width: 700px;
     margin-top: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #2c2c2c;
+    border-bottom: 2px solid #fff;
     cursor: pointer;
     padding: 30px 0;
     margin: 15px 0;
@@ -48,7 +58,7 @@
 }
 
 .question h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Jost';
     font-weight: 550;
 }
@@ -63,6 +73,7 @@
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 1.2rem;
+    color: #fff;
 }
 
 .faq.active .answer{
@@ -77,6 +88,7 @@
 .fa-chevron-down {
     transition: transform .5s ease-in;
     font-size: 1.3rem;
+    color: #fff;
 }
 
 @keyframes fade {
@@ -92,232 +104,31 @@
 
 /*MEDIA QUERYS*/
 @media screen and (min-width: 240px){
-    .section__pd{
-        height: 100%;
-        padding: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #F3D9DC;
-        overflow-x: hidden;
-    }
-
-    .comida__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 1100px;
-        gap: 2em;
-    }
-    
-    .faqs{
-        min-height: auto;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #C78283;
-        color: #fff;
-        overflow-x: hidden;
-        padding: 15px;
-    }
-    
     .title__faqs{
-        width: 100vw;
-        text-align: center;
-        font-size: 2.5rem;
-        font-family: 'Jost';
-        color: #fff;
-        background-color: #C78283;
         padding: 15px;
     }
     
     .faq{
         max-width: 860px;
-        margin-top: 2rem;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid #fff;
-        cursor: pointer;
-        padding: 30px 0;
-        margin: 15px 0;
-    }
-    
-    .question{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .question h3{
-        font-size: 1.7rem;
-        font-family: 'Jost';
-        font-weight: 550;
-    }
-    
-    .answer{
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 1.4s ease;
     }
     
     .answer p{
-        padding-top: 1rem;
-        line-height: 1.6;
         font-size: 1.1rem;
     }
 }
 
-@media screen and (min-width: 400px){
-    .section__pd{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Jost', sans-serif;
-    }
-
-    .comida__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 1100px;
-        gap: 2em;
-    }
-}
-
-@media screen and (min-width: 640px){
-    .section__pd{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Jost', sans-serif;
-    }
-
-    .comida__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 1100px;
-        gap: 2em;
-    }
-}
-
 @media screen and (min-width: 768px){
-    .section__pd{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Jost', sans-serif;
-    }
-
-    .comida__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 1100px;
-        gap: 2em;
-    }
-    
-    .faqs{
-        min-height: auto;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #C78283;
-        color: #fff;
-        overflow-x: hidden;
-        padding: 15px;
-    }
-    
-    .title__faqs{
-        width: 100vw;
-        text-align: center;
-        font-size: 2.5rem;
-        font-family: 'Jost';
-        color: #fff;
-        background-color: #C78283;
-        padding: 15px;
-    }
-    
     .faq{
         max-width: 700px;
-        margin-top: 2rem;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid #fff;
-        cursor: pointer;
-        padding: 30px 0;
-        margin: 15px 0;
-    }
-    
-    .question{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .question h3{
-        font-size: 1.7rem;
-        font-family: 'Jost';
-        font-weight: 550;
-        color: #fff;
-    }
-    
-    .answer{
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 1.4s ease;
     }
     
     .answer p{
-        padding-top: 1rem;
-        line-height: 1.6;
         font-size: 1.2rem;
-        color: #fff;
-    }
-
-    .fa-chevron-down{
-        color: #fff;
     }
 }
 
 @media screen and (min-width: 1115px){
-    .section__pd{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Jost', sans-serif;
-        background-color: #F3D9DC;
-    }
-    
-    
     .comida__container{
-        width: 100%;
-        display: flex;
         flex-direction: row;
-        max-width: 1100px;
-        gap: 2em;
     }
 }

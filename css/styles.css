@@ -121,6 +121,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
 }
 
 .navmenu.open {
@@ -136,6 +137,7 @@ nav {
   transition: all 0.42s ease;
   text-transform: uppercase;
   position: relative;
+  text-decoration: none;
 }
 
 .navmenu a:hover {
@@ -442,7 +444,7 @@ footer .footer__copy {
   font-size: 60px;
 }
 
-hr {
+.hr__banner {
   width: 80px;
   height: 3px;
   background-color: #B49286;
@@ -1287,8 +1289,18 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #B49286;
+  background-color: #F3D9DC;
   overflow-x: hidden;
+}
+
+.comida__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  gap: 2em;
 }
 
 .faqs {
@@ -1298,8 +1310,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
-  color: #2c2c2c;
+  background-color: #C78283;
+  color: #fff;
   overflow-x: hidden;
 }
 
@@ -1308,8 +1320,8 @@ hr {
   text-align: center;
   font-size: 2.5rem;
   font-family: "Jost";
-  color: #2c2c2c;
-  background-color: #fff;
+  color: #fff;
+  background-color: #C78283;
   padding: 50px 0px;
 }
 
@@ -1317,7 +1329,7 @@ hr {
   max-width: 700px;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #2c2c2c;
+  border-bottom: 2px solid #fff;
   cursor: pointer;
   padding: 30px 0;
   margin: 15px 0;
@@ -1330,7 +1342,7 @@ hr {
 }
 
 .question h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: "Jost";
   font-weight: 550;
 }
@@ -1345,6 +1357,7 @@ hr {
   padding-top: 1rem;
   line-height: 1.6;
   font-size: 1.2rem;
+  color: #fff;
 }
 
 .faq.active .answer {
@@ -1359,6 +1372,7 @@ hr {
 .fa-chevron-down {
   transition: transform 0.5s ease-in;
   font-size: 1.3rem;
+  color: #fff;
 }
 
 @keyframes fade {
@@ -1373,208 +1387,27 @@ hr {
 }
 /*MEDIA QUERYS*/
 @media screen and (min-width: 240px) {
-  .section__pd {
-    height: 100%;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F3D9DC;
-    overflow-x: hidden;
-  }
-  .comida__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1100px;
-    gap: 2em;
-  }
-  .faqs {
-    min-height: auto;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #C78283;
-    color: #fff;
-    overflow-x: hidden;
-    padding: 15px;
-  }
   .title__faqs {
-    width: 100vw;
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: "Jost";
-    color: #fff;
-    background-color: #C78283;
     padding: 15px;
   }
   .faq {
     max-width: 860px;
-    margin-top: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #fff;
-    cursor: pointer;
-    padding: 30px 0;
-    margin: 15px 0;
-  }
-  .question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .question h3 {
-    font-size: 1.7rem;
-    font-family: "Jost";
-    font-weight: 550;
-  }
-  .answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1.4s ease;
   }
   .answer p {
-    padding-top: 1rem;
-    line-height: 1.6;
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 400px) {
-  .section__pd {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: "Jost", sans-serif;
-  }
-  .comida__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1100px;
-    gap: 2em;
-  }
-}
-@media screen and (min-width: 640px) {
-  .section__pd {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: "Jost", sans-serif;
-  }
-  .comida__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1100px;
-    gap: 2em;
-  }
-}
 @media screen and (min-width: 768px) {
-  .section__pd {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: "Jost", sans-serif;
-  }
-  .comida__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1100px;
-    gap: 2em;
-  }
-  .faqs {
-    min-height: auto;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #C78283;
-    color: #fff;
-    overflow-x: hidden;
-    padding: 15px;
-  }
-  .title__faqs {
-    width: 100vw;
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: "Jost";
-    color: #fff;
-    background-color: #C78283;
-    padding: 15px;
-  }
   .faq {
     max-width: 700px;
-    margin-top: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #fff;
-    cursor: pointer;
-    padding: 30px 0;
-    margin: 15px 0;
-  }
-  .question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .question h3 {
-    font-size: 1.7rem;
-    font-family: "Jost";
-    font-weight: 550;
-    color: #fff;
-  }
-  .answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1.4s ease;
   }
   .answer p {
-    padding-top: 1rem;
-    line-height: 1.6;
     font-size: 1.2rem;
-    color: #fff;
-  }
-  .fa-chevron-down {
-    color: #fff;
   }
 }
 @media screen and (min-width: 1115px) {
-  .section__pd {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    font-family: "Jost", sans-serif;
-    background-color: #F3D9DC;
-  }
   .comida__container {
-    width: 100%;
-    display: flex;
     flex-direction: row;
-    max-width: 1100px;
-    gap: 2em;
   }
 }
 .text__products {
@@ -1586,12 +1419,13 @@ hr {
   gap: 10px;
   padding: 40px 40px;
   width: 100%;
-  background-color: #F3D9DC;
+  background-color: rgba(197, 175, 178, 0.8588235294);
+  border-bottom: 2px solid rgba(197, 175, 178, 0.8588235294);
 }
 
 .text__products h1 {
-  font-size: 40px;
-  color: #B49286;
+  font-size: 50px;
+  color: #fff;
   margin: 0 0 5px 0;
   font-family: "League Spartan";
 }
@@ -1599,12 +1433,21 @@ hr {
 .text__products p {
   font-size: 23px;
   max-width: 70%;
-  color: #777;
+  color: #fff;
 }
 
 .text__products i {
   font-size: 50px;
-  color: #B49286;
+  color: #fff;
+}
+
+.hr__products {
+  width: 80px;
+  height: 2px;
+  color: #fff;
+  background-color: #fff;
+  opacity: 1;
+  border: none;
 }
 
 .img__products {
@@ -1627,7 +1470,7 @@ hr {
   gap: 50px;
   margin: 0 auto;
   padding: 75px 80px;
-  background: #D7BEA8;
+  background: #fff;
 }
 
 .products {
@@ -1635,6 +1478,8 @@ hr {
   border-radius: 10px;
   width: 80%;
   flex: 350px;
+  overflow: hidden;
+  border: 1px solid #C78283;
 }
 
 .products:hover {
@@ -1685,197 +1530,87 @@ hr {
 
 /*TORTAS/PASTISSERIE/BRUNCH/NOVEDADES*/
 @media screen and (min-width: 240px) {
-  .text__products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    padding: 40px 40px;
-    width: 100%;
-    background-color: #F3D9DC;
-  }
   .text__products h1 {
-    font-size: 40px;
-    color: #B49286;
-    margin: 0 0 5px 0;
     margin-top: 5px;
-    font-family: "League Spartan";
   }
   .text__products p {
     font-size: 20px;
-    max-width: 70%;
-    color: #777;
   }
   .text__products i {
     font-size: 40px;
-    color: #B49286;
     margin-bottom: 20px;
   }
   .img__products {
-    max-width: 100%;
-    width: 100%;
     height: 220px;
-    object-fit: cover;
-    border-radius: 10px 0 0 0;
-    transition: all 0.42s ease;
   }
   .container__products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    margin: 0 auto;
     padding: 60px 0px;
-    background: #D7BEA8;
-  }
-  .products {
-    margin: 0 35px;
-    border-radius: 10px;
-    width: 80%;
-    flex: 350px;
-    overflow: hidden;
   }
   .info__products {
     padding: 20px 15px;
-    background: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-top: -10px;
-    line-height: 1.5;
-    gap: 20px;
   }
   .info__products h2 {
     font-size: 20px;
-    font-weight: 500;
   }
   .price {
     font-size: 15px;
-    font-weight: 400;
   }
   .btn__product {
     padding: 15px 0px;
-    color: #fff;
-    background-color: #C78283;
-    border: 2px solid #C78283;
     font-size: 13px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.42s ease;
   }
 }
 @media screen and (min-width: 300px) {
   .img__products {
-    max-width: 100%;
-    width: 100%;
     height: 280px;
-    object-fit: cover;
-    border-radius: 10px 0 0 0;
-    transition: all 0.42s ease;
   }
 }
 @media screen and (min-width: 400px) {
   .img__products {
-    max-width: 100%;
-    width: 100%;
     height: 350px;
-    object-fit: cover;
-    border-radius: 10px 0 0 0;
-    transition: all 0.42s ease;
   }
 }
 @media screen and (min-width: 500px) {
   .img__products {
-    max-width: 100%;
-    width: 100%;
     height: 450px;
-    object-fit: cover;
-    border-radius: 10px 0 0 0;
-    transition: all 0.42s ease;
-  }
-  .info__products {
-    padding: 20px 15px;
-    background: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-top: -10px;
-    line-height: 1.5;
-    gap: 20px;
   }
   .info__products h2 {
     font-size: 30px;
-    font-weight: 500;
   }
   .price {
     font-size: 25px;
-    font-weight: 400;
   }
   .btn__product {
     padding: 20px 0px;
-    color: #fff;
-    background-color: #C78283;
-    border: 2px solid #C78283;
     font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.42s ease;
   }
 }
 @media screen and (min-width: 700px) {
   .text__products h1 {
     font-size: 50px;
-    color: #B49286;
-    margin: 0 0 5px 0;
     margin-top: 5px;
-    font-family: "League Spartan";
   }
   .text__products p {
     font-size: 23px;
-    max-width: 70%;
-    color: #777;
   }
   .text__products i {
     font-size: 50px;
-    color: #B49286;
   }
   .img__products {
-    max-width: 100%;
-    width: 100%;
     height: 550px;
-    object-fit: cover;
-    border-radius: 10px 0 0 0;
-    transition: all 0.42s ease;
   }
   .info__products {
     padding: 20px 15px;
-    background: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-top: -10px;
-    line-height: 1.5;
     gap: 30px;
   }
   .info__products h2 {
     font-size: 30px;
-    font-weight: 500;
   }
   .price {
     font-size: 25px;
-    font-weight: 400;
   }
   .btn__product {
     padding: 20px 0px;
-    color: #fff;
-    background-color: #C78283;
-    border: 2px solid #C78283;
-    font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.42s ease;
   }
 }
 @media screen and (min-width: 890px) {
@@ -1884,40 +1619,20 @@ hr {
     padding: 60px 60px;
   }
   .img__products {
-    max-width: 100%;
-    width: 100%;
     height: 400px;
-    object-fit: cover;
-    border-radius: 10px 0 0 0;
-    transition: all 0.42s ease;
   }
   .info__products {
-    padding: 20px 15px;
-    background: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-top: -10px;
-    line-height: 1.5;
     gap: 20px;
   }
   .info__products h2 {
     font-size: 25px;
-    font-weight: 500;
   }
   .price {
     font-size: 20px;
-    font-weight: 400;
   }
   .btn__product {
     padding: 15px 0px;
-    color: #fff;
-    background-color: #C78283;
-    border: 2px solid #C78283;
     font-size: 13px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.42s ease;
   }
 }
 .form__container {
@@ -2084,15 +1799,7 @@ main::-webkit-scrollbar {
 /*MEDIA QUERYS*/
 @media screen and (min-width: 240px) {
   .sobrenosotros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    background-color: #F3D9DC;
-    padding: 50px;
   }
   .text__sobrenosotros {
     margin: 0px;
@@ -2101,8 +1808,6 @@ main::-webkit-scrollbar {
   }
   .text__sobrenosotros h2 {
     font-size: 35px;
-    margin: 30px 0;
-    font-weight: 600;
     text-align: center;
   }
   .text__sobrenosotros p {
@@ -2110,14 +1815,10 @@ main::-webkit-scrollbar {
     text-align: center;
   }
   .sobrenosotros2 {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 20px;
     text-align: left;
-    background-color: #B49286;
-    color: #fff;
   }
   .gallery {
     width: 100%;
@@ -2125,160 +1826,38 @@ main::-webkit-scrollbar {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 350px);
     grid-template-areas: "img1 img1 img1" "img2 img2 img2" "img3 img3 img3";
-    object-fit: cover;
-    overflow: hidden;
-    gap: 5px;
-    background-color: #fff;
-    border: 5px solid #fff;
-  }
-  .gallery img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-  }
-  .img1 {
-    width: 100%;
-    grid-area: img1;
-  }
-  .img2 {
-    width: 100%;
-    grid-area: img2;
-  }
-  .img3 {
-    width: 100%;
-    grid-area: img3;
   }
 }
 @media screen and (min-width: 700px) {
-  .sobrenosotros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    background-color: #F3D9DC;
-    padding: 50px;
-  }
   .text__sobrenosotros {
-    margin: 0px;
-    padding: 0 20px;
     min-width: 600px;
   }
   .text__sobrenosotros h2 {
     font-size: 45px;
-    margin: 30px 0;
-    font-weight: 600;
-    text-align: center;
   }
   .text__sobrenosotros p {
     font-size: 28px;
-    text-align: center;
   }
   .sobrenosotros2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 50px;
-    text-align: left;
-    background-color: #B49286;
-    color: #fff;
   }
   .gallery {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 350px);
     grid-template-areas: "img1 img1 img1" "img2 img2 img3";
-    object-fit: cover;
-    overflow: hidden;
-    gap: 5px;
-    background-color: #fff;
-    border: 5px solid #fff;
-  }
-  .gallery img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-  }
-  .img1 {
-    width: 100%;
-    grid-area: img1;
-  }
-  .img2 {
-    width: 100%;
-    grid-area: img2;
-  }
-  .img3 {
-    width: 100%;
-    grid-area: img3;
   }
 }
 @media screen and (min-width: 1200px) {
-  .sobrenosotros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    background-color: #F3D9DC;
-    padding: 50px;
-  }
   .text__sobrenosotros {
-    margin: 0px;
-    padding: 0 20px;
     max-width: 600px;
   }
-  .text__sobrenosotros h2 {
-    font-size: 45px;
-    margin: 30px 0;
-    font-weight: 600;
-  }
-  .text__sobrenosotros p {
-    font-size: 28px;
-  }
   .sobrenosotros2 {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
     text-align: left;
-    background-color: #B49286;
-    color: #fff;
   }
   .gallery {
     width: 600px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 350px);
-    grid-template-areas: "img1 img1 img1" "img2 img2 img3";
-    object-fit: cover;
-    overflow: hidden;
-    gap: 5px;
-    background-color: #fff;
-    border: 5px solid #fff;
-  }
-  .gallery img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-  }
-  .img1 {
-    width: 100%;
-    grid-area: img1;
-  }
-  .img2 {
-    width: 100%;
-    grid-area: img2;
-  }
-  .img3 {
-    width: 100%;
-    grid-area: img3;
   }
 }
 .btn__whatsapp {
