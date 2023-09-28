@@ -135,17 +135,19 @@ header {
     position: relative;
     text-decoration: none;
     border: none;
+      &:hover{
+        background-color: #C78283;
+        color: #fff;
+      }
+
+      &:active{
+        background-color: #C78283;
+      }
   }
 
   .navmenu a:hover {
     background-color: #d1a2a2;
   }
-
-  .btn:hover {
-    color:#fff;
-    background-color: transparent;
-    border-color: transparent;
-}
   
   .container__search form {
     position: relative;
