@@ -1,5 +1,14 @@
-.form__container{
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background: url(../resources/cafffe.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.form__container{
     background-size: cover;
     height: 100%;
     display: flex;
@@ -58,6 +67,116 @@
                     transition: all .42s ease;
                 }
         }
+}
+
+.faqs{
+    min-height: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c782839c;
+    color: #fff;
+    overflow-x: hidden;
+    margin:0 auto;
+    border-radius: 10px;
+}
+
+.title__faqs{
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Jost';
+    color: #fff;
+    padding: 50px 0px;
+    border-bottom: 1px solid #fff;
+}
+
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    padding: 30px;
+    margin: 15px 0;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.7rem;
+    font-family: 'Jost';
+    font-weight: 550;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active .fa-chevron-down{
+    transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+    transition: transform .5s ease-in;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*MEDIA QUERYS*/
+@media screen and (min-width: 240px){
+    .title__faqs{
+        padding: 15px;
+    }
+    
+    .faq{
+        max-width: 860px;
+    }
+    
+    .answer p{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .faq{
+        max-width: 700px;
+    }
+    
+    .answer p{
+        font-size: 1.2rem;
+    }
 }
 
 /*MEDIA QUERYS*/

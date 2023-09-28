@@ -19,6 +19,7 @@
 </head>
 
 <body>
+     <!--HEADER-->
     <header>
         <nav>
             <div class="container__header">
@@ -37,16 +38,27 @@
                     <a href="#"><i class="bi bi-basket2"></i></a>
                 </div>
             </div>
+             <!--NAVBAR-->
             <div class="container__navbar">
                 <div class="fa-solid fa-bars" id="menu__icon"></div>
                 <div class="container__navmenu">
                     <div id="background__menu"></div>
                     <ul class="navmenu" id="navmenu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./novedades.html">Novedades</a></li>
-                        <li><a href="./sobrenosotros.html" class="active">Sobre nosotros</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="../index.html" class="navmenu__link">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PRODUCTOS
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tortas.html">Tortas</a></li>
+                                <li><a class="dropdown-item" href="pastisserie.html">Pastisserie</a></li>
+                                <li><a class="dropdown-item" href="brunch.html">Brunch</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="novedades.html" class="navmenu__link">Novedades</a></li>
+                        <li class="menu__item"><a href="sobrenosotros.html" class="active navmenu__link">Sobre nosotros</a></li>
+                        <li class="menu__item"><a href="contacto.html" class="navmenu__link">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="container__search">
@@ -59,6 +71,7 @@
         </nav>
     </header>
 
+     <!--MAIN CONTENT-->
     <main>
         <!--ICONO WHATSAPP-->
         <a href="https://wa.me/1153313859" class="btn__whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -67,6 +80,8 @@
             <h1>Nuestra Historia</h1>
             <hr class="hr__products">
         </section>
+
+         <!--SOBRE NOSOTROS (sección 1)-->
         <section class="sobrenosotros">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
@@ -104,6 +119,8 @@
                 <p>Candelitte comenzó siendo un emprendimiento a cargo de la pastelera profesional Candela Arnau, quien por su amor y pasión hacia la pastelería decidió comenzar a realizar tortas por encargue. Primero se vendían a familiares, luego a conocidos. Sus tortas comenzaron a volverse muy famosas en su entorno, y al cabo de un tiempo, comenzó a vender por Instagram a mucha más gente.</p>
             </div>
         </section>
+
+        <!--SOBRE NOSOTROS (sección 2)-->
         <section class="sobrenosotros2">
             <div class="text__sobrenosotros">
                 <h2>Inauguración</h2>
@@ -120,6 +137,7 @@
         </section>
     </main>
 
+    <!--FOOTER-->
     <footer>
         <div class="container__footer">
             <div class="box__footer">
@@ -160,6 +178,7 @@
             <small>&copy; 2023 <b>Candelitte</b></small>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
