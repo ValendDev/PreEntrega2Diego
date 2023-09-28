@@ -123,10 +123,29 @@ header {
     position: relative;
     text-decoration: none;
   }
-  
+
+  .btn{
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    padding: 27px;
+    font-weight: 500;
+    transition: all 0.42s ease;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    border: none;
+  }
+
   .navmenu a:hover {
     background-color: #d1a2a2;
   }
+
+  .btn:hover {
+    color:#fff;
+    background-color: transparent;
+    border-color: transparent;
+}
   
   .container__search form {
     position: relative;
