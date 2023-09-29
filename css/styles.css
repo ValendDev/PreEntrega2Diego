@@ -137,8 +137,9 @@ nav {
   text-transform: uppercase;
   position: relative;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s ease-in-out;
 }
-
 .navmenu__link:hover {
   border-bottom: 2px solid #fff;
 }
@@ -254,7 +255,6 @@ nav {
   .navmenu .navmenu__link {
     text-decoration: none;
     color: #C78283;
-    transition: all 0.42s ease;
   }
   .navmenu .navmenu__link:hover {
     border: none;
@@ -385,6 +385,13 @@ nav {
   }
   .navmenu a {
     font-size: 0.9rem;
+  }
+  .navmenu__link {
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s ease-in-out;
+  }
+  .navmenu__link:hover {
+    border-bottom: 2px solid #fff;
   }
   .container__search form input {
     width: 12rem;
@@ -1575,6 +1582,7 @@ footer .footer__copy {
   }
 }
 .contact {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1593,7 +1601,7 @@ footer .footer__copy {
   margin: 0 auto;
 }
 .form__container form {
-  width: 500px;
+  width: 100%;
   height: 700px;
   background: rgba(255, 255, 255, 0.633);
   padding: 50px 55px;
@@ -1616,6 +1624,7 @@ footer .footer__copy {
   margin: 0 0 20px 0;
 }
 .form__container form .inputext {
+  width: 100%;
   margin: 15px 0;
   padding: 17px 25px;
   outline: none;
@@ -1656,8 +1665,7 @@ footer .footer__copy {
   margin: 0 auto;
   border-radius: 10px;
 }
-
-.title__faqs {
+.faqs .title__faqs {
   width: 100vw;
   text-align: center;
   font-size: 2.5rem;
@@ -1666,8 +1674,7 @@ footer .footer__copy {
   padding: 50px 0px;
   border-bottom: 1px solid #fff;
 }
-
-.faq {
+.faqs .faq {
   max-width: 700px;
   margin-top: 2rem;
   padding-bottom: 1rem;
@@ -1676,26 +1683,27 @@ footer .footer__copy {
   padding: 30px;
   margin: 15px 0;
 }
-
-.question {
+.faqs .faq .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.question h3 {
+.faqs .faq .question h3 {
   font-size: 1.7rem;
   font-family: "Jost";
   font-weight: 550;
 }
-
-.answer {
+.faqs .faq .question .fa-chevron-down {
+  transition: transform 0.5s ease-in;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.faqs .faq .answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1.4s ease;
 }
-
-.answer p {
+.faqs .faq .answer p {
   padding-top: 1rem;
   line-height: 1.6;
   font-size: 1.2rem;
@@ -1711,12 +1719,6 @@ footer .footer__copy {
   transform: rotate(180deg);
 }
 
-.fa-chevron-down {
-  transition: transform 0.5s ease-in;
-  font-size: 1.3rem;
-  color: #fff;
-}
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -1728,25 +1730,6 @@ footer .footer__copy {
   }
 }
 /*MEDIA QUERYS*/
-@media screen and (min-width: 240px) {
-  .title__faqs {
-    padding: 15px;
-  }
-  .faq {
-    max-width: 860px;
-  }
-  .answer p {
-    font-size: 1.1rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .faq {
-    max-width: 700px;
-  }
-  .answer p {
-    font-size: 1.2rem;
-  }
-}
 /*MEDIA QUERYS*/
 @media screen and (min-width: 240px) {
   .form__container form {
@@ -1759,6 +1742,15 @@ footer .footer__copy {
   .form__container form p {
     font-size: 17px;
   }
+  .faqs .title__faqs {
+    padding: 15px;
+  }
+  .faqs .faq {
+    max-width: 860px;
+  }
+  .faqs .faq .answer p {
+    font-size: 1.1rem;
+  }
 }
 @media screen and (min-width: 500px) {
   .form__container {
@@ -1766,6 +1758,14 @@ footer .footer__copy {
   }
   .form__container form {
     border-radius: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .faqs .faq {
+    max-width: 700px;
+  }
+  .faqs .faq .answer p {
+    font-size: 1.2rem;
   }
 }
 .sobrenosotros {
